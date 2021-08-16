@@ -491,7 +491,7 @@ abstract contract Ownable is Context {
      * @dev Initializes the contract setting the deployer as the initial owner.
      */
     constructor () {
-        _owner = 0x7f64dD54E1637bFAdbF767e03809495fC9fBffeC;
+        _owner = 0xE8A4eF706d4e57210cB6CE5781C052Cc0331B616;
         emit OwnershipTransferred(address(0), _owner);
     }
 
@@ -793,7 +793,7 @@ contract bluckyd is Context, IERC20, Ownable {
     constructor () {
         _rOwned[owner()] = _rTotal;
         
-        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1);
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1 );
          // Create a uniswap pair for this new token
         uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
             .createPair(address(this), _uniswapV2Router.WETH());
